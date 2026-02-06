@@ -15,8 +15,7 @@ Hệ thống được thiết kế theo mô hình **Cloud-Native**, tập trung 
 4. **App:** Request được chuyển hướng đến Service NodeJS (chạy trên Node Spot).
 5. **Autoscale:** Khi tải tăng, HPA tăng số lượng Pod -> Karpenter tăng số lượng Node Spot.
 
-[Image of EKS architecture with Karpenter and Nginx Ingress Controller]
-
+![EKS Architecture Architecture](./Image/diagram-node.png)
 ---
 
 ## 2. Chi tiết các thành phần hạ tầng
