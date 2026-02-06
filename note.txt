@@ -1,3 +1,10 @@
+cluster_endpoint = "https://8C8BD46B4C26357FCF98EDC4CD07DF42.gr7.us-east-1.eks.amazonaws.com"
+cluster_name = "eks-karpenter-demo"
+cluster_region = "us-east-1"
+configure_kubectl_command = "aws eks update-kubeconfig --region us-east-1 --name eks-karpenter-demo"
+karpenter_node_role_arn = "arn:aws:iam::009160043369:role/eks-karpenter-demo-karpenter-node-role"
+karpenter_queue_name = "Karpenter-eks-karpenter-demo"
+
 export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
 aws ecr-public get-login-password --region us-east-1 | helm registry login public.ecr.aws --username AWS --password-stdin
 
@@ -7,23 +14,34 @@ CLUSTER_NAME="eks-karpenter-demo"
 # 2. Cài đặt Karpenter
   xong chạy cài Addon
 aws eks create-addon --cluster-name eks-karpenter-demo --addon-name eks-pod-identity-agent --region us-east-1
-aws iam create-service-linked-role --aws-service-name spot.amazonaws.com
+#aws iam create-service-linked-role --aws-service-name spot.amazonaws.com
 helm upgrade --install karpenter oci://public.ecr.aws/karpenter/karpenter \
   --version 1.8.1 \
   --namespace kube-system \
   --create-namespace \
   --set settings.clusterName=${CLUSTER_NAME} \
-  --set settings.interruptionQueue=${CLUSTER_NAME} \
+  --set settings.interruptionQueue="" \
   --wait
-
-# 1. Cài đặt CRD cho EC2NodeClass
-kubectl apply -f https://raw.githubusercontent.com/aws/karpenter-provider-aws/v1.8.1/pkg/apis/crds/karpenter.k8s.aws_ec2nodeclasses.yaml
-
-# 2. Cài đặt CRD cho NodePool
-kubectl apply -f https://raw.githubusercontent.com/aws/karpenter-provider-aws/v1.8.1/pkg/apis/crds/karpenter.sh_nodepools.yaml
-
-# 3. Cài đặt CRD cho NodeClaim
-kubectl apply -f https://raw.githubusercontent.com/aws/karpenter-provider-aws/v1.8.1/pkg/apis/crds/karpenter.sh_nodeclaims.yaml
+---
+ROLE_NAME="arn:aws:iam::009160043369:role/eks-karpenter-demo-karpenter-node-role"
+# 2. Gắn policy cho phép ListInstanceProfiles
+aws iam put-role-policy \
+    --role-name KarpenterController-20260206082441215800000003 \
+    --policy-name KarpenterEmergencyFix \
+    --policy-document '{
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "iam:ListInstanceProfiles",
+                    "iam:DeleteInstanceProfile",
+                    "iam:RemoveRoleFromInstanceProfile"
+                ],
+                "Resource": "*"
+            }
+        ]
+    }'
 -----------
 
 1. install nginx ingress
@@ -43,3 +61,13 @@ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/
 
 3.### install Metrics server
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+
+4 clean 
+kubectl delete -f app-nodejs.yaml
+# 2. Xóa Ingress Controller (Cái này sẽ trigger lệnh xóa AWS LoadBalancer)
+helm uninstall ingress-nginx -n ingress-nginx
+kubectl delete ns ingress-nginx
+
+kubectl delete nodepool --all
+kubectl delete ec2nodeclass --all

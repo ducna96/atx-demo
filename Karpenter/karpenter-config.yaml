@@ -30,7 +30,7 @@ spec:
     - tags:
         karpenter.sh/discovery: "eks-karpenter-demo"
   securityGroupSelectorTerms:
-    - tags:s
+    - tags:
         karpenter.sh/discovery: "eks-karpenter-demo"
   tags:
     CreatedBy: "Karpenter"
@@ -50,7 +50,7 @@ spec:
       nodeClassRef:
         group: karpenter.k8s.aws
         kind: EC2NodeClass
-        name: default-al
+        name: default
       requirements:
         - key: "karpenter.sh/capacity-type"
           operator: In
@@ -64,6 +64,9 @@ spec:
         - key: "karpenter.k8s.aws/instance-cpu"
           operator: In
           values: ["2", "4", "8"]
+        - key: karpenter.k8s.aws/instance-size
+          operator: NotIn
+          values: ["nano", "micro"]
       taints:
         - key: app
           value: nodejs
