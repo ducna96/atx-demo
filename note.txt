@@ -1,10 +1,3 @@
-cluster_endpoint = "https://8C8BD46B4C26357FCF98EDC4CD07DF42.gr7.us-east-1.eks.amazonaws.com"
-cluster_name = "eks-karpenter-demo"
-cluster_region = "us-east-1"
-configure_kubectl_command = "aws eks update-kubeconfig --region us-east-1 --name eks-karpenter-demo"
-karpenter_node_role_arn = "arn:aws:iam::009160043369:role/eks-karpenter-demo-karpenter-node-role"
-karpenter_queue_name = "Karpenter-eks-karpenter-demo"
-
 export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
 aws ecr-public get-login-password --region us-east-1 | helm registry login public.ecr.aws --username AWS --password-stdin
 
@@ -65,7 +58,7 @@ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/late
 
 4 clean 
 kubectl delete -f app-nodejs.yaml
-# 2. Xóa Ingress Controller (Cái này sẽ trigger lệnh xóa AWS LoadBalancer)
+# 2. Xóa Ingress Controller
 helm uninstall ingress-nginx -n ingress-nginx
 kubectl delete ns ingress-nginx
 
