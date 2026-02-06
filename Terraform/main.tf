@@ -1,11 +1,9 @@
 # main.tf
 
-# 1. Lấy thông tin AZs
 data "aws_availability_zones" "available" {
   state = "available"
 }
 
-# 2. Định nghĩa VPC (Mạng)
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.5"
@@ -31,7 +29,6 @@ module "vpc" {
   }
 }
 
-# 3. Định nghĩa EKS Cluster (BẠN ĐANG THIẾU KHỐI NÀY)
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 20.8"
@@ -85,15 +82,12 @@ module "karpenter" {
 
   cluster_name = module.eks.cluster_name
 
-  # Bật tính năng Pod Identity (Thay thế IRSA cũ)
   enable_pod_identity             = true
   create_pod_identity_association = true
 
-  # Tạo Node Role cho Karpenter quản lý
   node_iam_role_use_name_prefix = false
   node_iam_role_name            = "${var.cluster_name}-karpenter-node-role"
 
-  # Cấp quyền cho node tham gia cluster
   enable_v1_permissions = true
 
   tags = {
