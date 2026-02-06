@@ -1,0 +1,1308 @@
+module.karpenter.data.aws_caller_identity.current: Reading...
+module.eks.data.aws_caller_identity.current[0]: Reading...
+module.eks.module.eks_managed_node_group["core"].data.aws_caller_identity.current: Reading...
+module.karpenter.data.aws_region.current: Reading...
+module.eks.module.eks_managed_node_group["core"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+data.aws_availability_zones.available: Reading...
+module.eks.data.aws_partition.current[0]: Reading...
+module.eks.module.eks_managed_node_group["core"].data.aws_partition.current: Reading...
+module.karpenter.data.aws_partition.current: Reading...
+module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-0d0a30db7309583a6]
+module.karpenter.data.aws_region.current: Read complete after 0s [id=us-east-1]
+module.eks.module.eks_managed_node_group["core"].data.aws_partition.current: Read complete after 0s [id=aws]
+module.eks.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+module.karpenter.data.aws_partition.current: Read complete after 0s [id=aws]
+module.eks.module.eks_managed_node_group["core"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296]
+module.eks.module.kms.data.aws_caller_identity.current[0]: Reading...
+module.eks.module.kms.data.aws_partition.current[0]: Reading...
+module.eks.aws_cloudwatch_log_group.this[0]: Refreshing state... [id=/aws/eks/eks-karpenter-demo/cluster]
+module.eks.data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+module.eks.module.kms.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+module.karpenter.data.aws_iam_policy_document.controller_assume_role[0]: Reading...
+module.eks.data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2830595799]
+module.karpenter.data.aws_iam_policy_document.controller_assume_role[0]: Read complete after 0s [id=819195744]
+module.eks.module.eks_managed_node_group["core"].aws_iam_role.this[0]: Refreshing state... [id=core-node-group-eks-node-group-20260205104133113200000002]
+module.eks.aws_iam_role.this[0]: Refreshing state... [id=eks-karpenter-demo-cluster-20260205104133113100000001]
+module.eks.data.aws_iam_policy_document.custom[0]: Reading...
+module.eks.data.aws_iam_policy_document.custom[0]: Read complete after 0s [id=513122117]
+module.karpenter.data.aws_iam_policy_document.node_assume_role[0]: Reading...
+module.karpenter.data.aws_iam_policy_document.node_assume_role[0]: Read complete after 0s [id=2560088296]
+module.eks.aws_iam_policy.custom[0]: Refreshing state... [id=arn:aws:iam::009160043369:policy/eks-karpenter-demo-cluster-20260205104133113400000003]
+module.karpenter.data.aws_caller_identity.current: Read complete after 1s [id=009160043369]
+module.eks.module.eks_managed_node_group["core"].data.aws_caller_identity.current: Read complete after 2s [id=009160043369]
+module.eks.data.aws_caller_identity.current[0]: Read complete after 2s [id=009160043369]
+module.eks.data.aws_iam_session_context.current[0]: Reading...
+module.eks.data.aws_iam_session_context.current[0]: Read complete after 0s [id=arn:aws:iam::009160043369:user/david]
+module.eks.module.kms.data.aws_caller_identity.current[0]: Read complete after 2s [id=009160043369]
+data.aws_availability_zones.available: Read complete after 3s [id=us-east-1]
+module.eks.aws_iam_role_policy_attachment.this["AmazonEKSVPCResourceController"]: Refreshing state... [id=eks-karpenter-demo-cluster-20260205104133113100000001-20260205104135801500000007]
+module.eks.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"]: Refreshing state... [id=eks-karpenter-demo-cluster-20260205104133113100000001-20260205104135526100000005]
+module.eks.aws_iam_role_policy_attachment.custom[0]: Refreshing state... [id=eks-karpenter-demo-cluster-20260205104133113100000001-20260205104135883000000008]
+module.eks.module.kms.data.aws_iam_policy_document.this[0]: Reading...
+module.eks.module.kms.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=1182833388]
+module.eks.module.kms.aws_kms_key.this[0]: Refreshing state... [id=eca4792e-796a-4595-b0df-6c10d010a6ae]
+module.eks.module.eks_managed_node_group["core"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Refreshing state... [id=core-node-group-eks-node-group-20260205104133113200000002-20260205104135532800000006]
+module.eks.module.eks_managed_node_group["core"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=core-node-group-eks-node-group-20260205104133113200000002-20260205104135494800000004]
+module.eks.module.eks_managed_node_group["core"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=core-node-group-eks-node-group-20260205104133113200000002-20260205104135893000000009]
+module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-0a8a5197c1dada345]
+module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-07cdd5cc309d03432]
+module.eks.aws_security_group.cluster[0]: Refreshing state... [id=sg-0afbfd1816843554b]
+module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-0547a27964b19693f]
+module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-0318004231f3c8467]
+module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-0aa1d6fcce0f9b0a6]
+module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-0a28c66af9ae9bbae]
+module.eks.aws_security_group.node[0]: Refreshing state... [id=sg-0763b0091dc225f0f]
+module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-04bfd04951cde00d7]
+module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-09143f6679247815c]
+module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-0a756b5979a4570af]
+module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-07866f9c14a46540c]
+module.eks.module.kms.aws_kms_alias.this["cluster"]: Refreshing state... [id=alias/eks/eks-karpenter-demo]
+module.eks.aws_iam_policy.cluster_encryption[0]: Refreshing state... [id=arn:aws:iam::009160043369:policy/eks-karpenter-demo-cluster-ClusterEncryption2026020510420276920000000f]
+module.eks.aws_security_group_rule.node["ingress_cluster_9443_webhook"]: Refreshing state... [id=sgrule-3412334582]
+module.eks.aws_security_group_rule.node["ingress_cluster_8443_webhook"]: Refreshing state... [id=sgrule-2948932669]
+module.eks.aws_security_group_rule.node["ingress_cluster_443"]: Refreshing state... [id=sgrule-773601676]
+module.eks.aws_security_group_rule.node["ingress_self_coredns_tcp"]: Refreshing state... [id=sgrule-2916411682]
+module.eks.aws_security_group_rule.node["egress_all"]: Refreshing state... [id=sgrule-403416924]
+module.eks.aws_security_group_rule.node["ingress_cluster_kubelet"]: Refreshing state... [id=sgrule-123252960]
+module.eks.aws_security_group_rule.node["ingress_nodes_ephemeral"]: Refreshing state... [id=sgrule-1012556886]
+module.eks.aws_security_group_rule.node["ingress_cluster_4443_webhook"]: Refreshing state... [id=sgrule-1977319306]
+module.eks.aws_security_group_rule.node["ingress_self_coredns_udp"]: Refreshing state... [id=sgrule-160123597]
+module.eks.aws_security_group_rule.node["ingress_cluster_6443_webhook"]: Refreshing state... [id=sgrule-3164149788]
+module.eks.aws_security_group_rule.cluster["ingress_nodes_443"]: Refreshing state... [id=sgrule-3736740523]
+module.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-01403263df66d5b8d]
+module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-0f911256a6e9625b2]
+module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-0f136434866195dc3]
+module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-0a28c66af9ae9bbae1080289494]
+module.eks.aws_iam_role_policy_attachment.cluster_encryption[0]: Refreshing state... [id=eks-karpenter-demo-cluster-20260205104133113100000001-20260205104204104800000010]
+module.vpc.aws_nat_gateway.this[0]: Refreshing state... [id=nat-01665708d643a2bfb]
+module.vpc.aws_route.private_nat_gateway[0]: Refreshing state... [id=r-rtb-04bfd04951cde00d71080289494]
+module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-0003d075ce73334d4]
+module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-02185e0ffd3b2e8f4]
+module.eks.aws_eks_cluster.this[0]: Refreshing state... [id=eks-karpenter-demo]
+module.eks.data.tls_certificate.this[0]: Reading...
+module.eks.aws_eks_access_entry.this["cluster_creator"]: Refreshing state... [id=eks-karpenter-demo:arn:aws:iam::009160043369:user/david]
+module.eks.time_sleep.this[0]: Refreshing state... [id=2026-02-05T10:52:59Z]
+module.eks.module.eks_managed_node_group["core"].module.user_data.null_resource.validate_cluster_service_cidr: Refreshing state... [id=5736186333126339175]
+module.eks.module.eks_managed_node_group["core"].aws_launch_template.this[0]: Refreshing state... [id=lt-0abdce67b0c92f45e]
+module.eks.aws_eks_access_policy_association.this["cluster_creator_admin"]: Refreshing state... [id=eks-karpenter-demo#arn:aws:iam::009160043369:user/david#arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy]
+module.eks.data.tls_certificate.this[0]: Read complete after 2s [id=b1b539daa206035ae3c3e28288b0681fa1b462f3]
+module.eks.aws_iam_openid_connect_provider.oidc_provider[0]: Refreshing state... [id=arn:aws:iam::009160043369:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/2F91061D8034173D5E8A6D4118221934]
+module.eks.module.eks_managed_node_group["core"].aws_eks_node_group.this[0]: Refreshing state... [id=eks-karpenter-demo:core-node-group-20260205105307865700000013]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+ <= read (data resources)
+
+Terraform will perform the following actions:
+
+  # module.karpenter.data.aws_iam_policy_document.controller[0] will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "controller" {
+      + id                      = (known after apply)
+      + json                    = (known after apply)
+      + minified_json           = (known after apply)
+      + source_policy_documents = [
+          + (known after apply),
+        ]
+    }
+
+  # module.karpenter.data.aws_iam_policy_document.queue[0] will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "queue" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "sqs:SendMessage",
+            ]
+          + resources = [
+              + (known after apply),
+            ]
+          + sid       = "SqsWrite"
+
+          + principals {
+              + identifiers = [
+                  + "events.amazonaws.com",
+                  + "sqs.amazonaws.com",
+                ]
+              + type        = "Service"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "sqs:*",
+            ]
+          + effect    = "Deny"
+          + resources = [
+              + (known after apply),
+            ]
+          + sid       = "DenyHTTP"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "false",
+                ]
+              + variable = "aws:SecureTransport"
+            }
+
+          + principals {
+              + identifiers = [
+                  + "*",
+                ]
+              + type        = "*"
+            }
+        }
+    }
+
+  # module.karpenter.data.aws_iam_policy_document.v033[0] will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "v033" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "ec2:CreateFleet",
+              + "ec2:RunInstances",
+            ]
+          + resources = [
+              + "arn:aws:ec2:*:*:launch-template/*",
+              + "arn:aws:ec2:*:*:security-group/*",
+              + "arn:aws:ec2:*:*:spot-instances-request/*",
+              + "arn:aws:ec2:*:*:subnet/*",
+              + "arn:aws:ec2:*::image/*",
+              + "arn:aws:ec2:*::snapshot/*",
+            ]
+          + sid       = "AllowScopedEC2InstanceActions"
+        }
+      + statement {
+          + actions   = [
+              + "ec2:CreateFleet",
+              + "ec2:CreateLaunchTemplate",
+              + "ec2:RunInstances",
+            ]
+          + resources = [
+              + "arn:aws:ec2:*:*:fleet/*",
+              + "arn:aws:ec2:*:*:instance/*",
+              + "arn:aws:ec2:*:*:launch-template/*",
+              + "arn:aws:ec2:*:*:network-interface/*",
+              + "arn:aws:ec2:*:*:spot-instances-request/*",
+              + "arn:aws:ec2:*:*:volume/*",
+            ]
+          + sid       = "AllowScopedEC2InstanceActionsWithTags"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:RequestTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:RequestTag/karpenter.sh/nodepool"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "ec2:CreateTags",
+            ]
+          + resources = [
+              + "arn:aws:ec2:*:*:fleet/*",
+              + "arn:aws:ec2:*:*:instance/*",
+              + "arn:aws:ec2:*:*:launch-template/*",
+              + "arn:aws:ec2:*:*:network-interface/*",
+              + "arn:aws:ec2:*:*:spot-instances-request/*",
+              + "arn:aws:ec2:*:*:volume/*",
+            ]
+          + sid       = "AllowScopedResourceCreationTagging"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "RunInstances",
+                  + "CreateFleet",
+                  + "CreateLaunchTemplate",
+                ]
+              + variable = "ec2:CreateAction"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:RequestTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:RequestTag/karpenter.sh/nodepool"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "ec2:CreateTags",
+            ]
+          + resources = [
+              + "arn:aws:ec2:*:*:instance/*",
+            ]
+          + sid       = "AllowScopedResourceTagging"
+
+          + condition {
+              + test     = "ForAllValues:StringEquals"
+              + values   = [
+                  + "karpenter.sh/nodeclaim",
+                  + "Name",
+                ]
+              + variable = "aws:TagKeys"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:ResourceTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:ResourceTag/karpenter.sh/nodepool"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "ec2:DeleteLaunchTemplate",
+              + "ec2:TerminateInstances",
+            ]
+          + resources = [
+              + "arn:aws:ec2:*:*:instance/*",
+              + "arn:aws:ec2:*:*:launch-template/*",
+            ]
+          + sid       = "AllowScopedDeletion"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:ResourceTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:ResourceTag/karpenter.sh/nodepool"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "ec2:DescribeAvailabilityZones",
+              + "ec2:DescribeImages",
+              + "ec2:DescribeInstanceTypeOfferings",
+              + "ec2:DescribeInstanceTypes",
+              + "ec2:DescribeInstances",
+              + "ec2:DescribeLaunchTemplates",
+              + "ec2:DescribeSecurityGroups",
+              + "ec2:DescribeSpotPriceHistory",
+              + "ec2:DescribeSubnets",
+            ]
+          + resources = [
+              + "*",
+            ]
+          + sid       = "AllowRegionalReadActions"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "us-east-1",
+                ]
+              + variable = "aws:RequestedRegion"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "ssm:GetParameter",
+            ]
+          + resources = [
+              + "arn:aws:ssm:us-east-1::parameter/aws/service/*",
+            ]
+          + sid       = "AllowSSMReadActions"
+        }
+      + statement {
+          + actions   = [
+              + "pricing:GetProducts",
+            ]
+          + resources = [
+              + "*",
+            ]
+          + sid       = "AllowPricingReadActions"
+        }
+      + statement {
+          + actions   = [
+              + "sqs:DeleteMessage",
+              + "sqs:GetQueueAttributes",
+              + "sqs:GetQueueUrl",
+              + "sqs:ReceiveMessage",
+            ]
+          + resources = [
+              + (known after apply),
+            ]
+          + sid       = "AllowInterruptionQueueActions"
+        }
+      + statement {
+          + actions   = [
+              + "iam:PassRole",
+            ]
+          + resources = [
+              + (known after apply),
+            ]
+          + sid       = "AllowPassingInstanceRole"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "ec2.amazonaws.com",
+                ]
+              + variable = "iam:PassedToService"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "iam:CreateInstanceProfile",
+            ]
+          + resources = [
+              + "*",
+            ]
+          + sid       = "AllowScopedInstanceProfileCreationActions"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:RequestTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "us-east-1",
+                ]
+              + variable = "aws:RequestTag/topology.kubernetes.io/region"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:RequestTag/karpenter.k8s.aws/ec2nodeclass"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "iam:TagInstanceProfile",
+            ]
+          + resources = [
+              + "*",
+            ]
+          + sid       = "AllowScopedInstanceProfileTagActions"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:RequestTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:ResourceTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "us-east-1",
+                ]
+              + variable = "aws:ResourceTag/topology.kubernetes.io/region"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:RequestTag/karpenter.k8s.aws/ec2nodeclass"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:ResourceTag/karpenter.k8s.aws/ec2nodeclass"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "iam:AddRoleToInstanceProfile",
+              + "iam:DeleteInstanceProfile",
+              + "iam:RemoveRoleFromInstanceProfile",
+            ]
+          + resources = [
+              + "*",
+            ]
+          + sid       = "AllowScopedInstanceProfileActions"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:ResourceTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "us-east-1",
+                ]
+              + variable = "aws:ResourceTag/topology.kubernetes.io/region"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:ResourceTag/karpenter.k8s.aws/ec2nodeclass"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "iam:GetInstanceProfile",
+            ]
+          + resources = [
+              + "*",
+            ]
+          + sid       = "AllowInstanceProfileReadActions"
+        }
+      + statement {
+          + actions   = [
+              + "eks:DescribeCluster",
+            ]
+          + resources = [
+              + "arn:aws:eks:us-east-1:009160043369:cluster/eks-karpenter-demo",
+            ]
+          + sid       = "AllowAPIServerEndpointDiscovery"
+        }
+    }
+
+  # module.karpenter.data.aws_iam_policy_document.v1[0] will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "v1" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "ec2:CreateFleet",
+              + "ec2:RunInstances",
+            ]
+          + resources = [
+              + "arn:aws:ec2:us-east-1:*:capacity-reservation/*",
+              + "arn:aws:ec2:us-east-1:*:security-group/*",
+              + "arn:aws:ec2:us-east-1:*:subnet/*",
+              + "arn:aws:ec2:us-east-1::image/*",
+              + "arn:aws:ec2:us-east-1::snapshot/*",
+            ]
+          + sid       = "AllowScopedEC2InstanceAccessActions"
+        }
+      + statement {
+          + actions   = [
+              + "ec2:CreateFleet",
+              + "ec2:RunInstances",
+            ]
+          + resources = [
+              + "arn:aws:ec2:us-east-1:*:launch-template/*",
+            ]
+          + sid       = "AllowScopedEC2LaunchTemplateAccessActions"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:ResourceTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:ResourceTag/karpenter.sh/nodepool"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "ec2:CreateFleet",
+              + "ec2:CreateLaunchTemplate",
+              + "ec2:RunInstances",
+            ]
+          + resources = [
+              + "arn:aws:ec2:us-east-1:*:fleet/*",
+              + "arn:aws:ec2:us-east-1:*:instance/*",
+              + "arn:aws:ec2:us-east-1:*:launch-template/*",
+              + "arn:aws:ec2:us-east-1:*:network-interface/*",
+              + "arn:aws:ec2:us-east-1:*:spot-instances-request/*",
+              + "arn:aws:ec2:us-east-1:*:volume/*",
+            ]
+          + sid       = "AllowScopedEC2InstanceActionsWithTags"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "eks-karpenter-demo",
+                ]
+              + variable = "aws:RequestTag/eks:eks-cluster-name"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:RequestTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:RequestTag/karpenter.sh/nodepool"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "ec2:CreateTags",
+            ]
+          + resources = [
+              + "arn:aws:ec2:us-east-1:*:fleet/*",
+              + "arn:aws:ec2:us-east-1:*:instance/*",
+              + "arn:aws:ec2:us-east-1:*:launch-template/*",
+              + "arn:aws:ec2:us-east-1:*:network-interface/*",
+              + "arn:aws:ec2:us-east-1:*:spot-instances-request/*",
+              + "arn:aws:ec2:us-east-1:*:volume/*",
+            ]
+          + sid       = "AllowScopedResourceCreationTagging"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "RunInstances",
+                  + "CreateFleet",
+                  + "CreateLaunchTemplate",
+                ]
+              + variable = "ec2:CreateAction"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "eks-karpenter-demo",
+                ]
+              + variable = "aws:RequestTag/eks:eks-cluster-name"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:RequestTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:RequestTag/karpenter.sh/nodepool"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "ec2:CreateTags",
+            ]
+          + resources = [
+              + "arn:aws:ec2:us-east-1:*:instance/*",
+            ]
+          + sid       = "AllowScopedResourceTagging"
+
+          + condition {
+              + test     = "ForAllValues:StringEquals"
+              + values   = [
+                  + "eks:eks-cluster-name",
+                  + "karpenter.sh/nodeclaim",
+                  + "Name",
+                ]
+              + variable = "aws:TagKeys"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:ResourceTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringEqualsIfExists"
+              + values   = [
+                  + "eks-karpenter-demo",
+                ]
+              + variable = "aws:RequestTag/eks:eks-cluster-name"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:ResourceTag/karpenter.sh/nodepool"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "ec2:DeleteLaunchTemplate",
+              + "ec2:TerminateInstances",
+            ]
+          + resources = [
+              + "arn:aws:ec2:us-east-1:*:instance/*",
+              + "arn:aws:ec2:us-east-1:*:launch-template/*",
+            ]
+          + sid       = "AllowScopedDeletion"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:ResourceTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:ResourceTag/karpenter.sh/nodepool"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "ec2:DescribeAvailabilityZones",
+              + "ec2:DescribeImages",
+              + "ec2:DescribeInstanceTypeOfferings",
+              + "ec2:DescribeInstanceTypes",
+              + "ec2:DescribeInstances",
+              + "ec2:DescribeLaunchTemplates",
+              + "ec2:DescribeSecurityGroups",
+              + "ec2:DescribeSpotPriceHistory",
+              + "ec2:DescribeSubnets",
+            ]
+          + resources = [
+              + "*",
+            ]
+          + sid       = "AllowRegionalReadActions"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "us-east-1",
+                ]
+              + variable = "aws:RequestedRegion"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "ssm:GetParameter",
+            ]
+          + resources = [
+              + "arn:aws:ssm:us-east-1::parameter/aws/service/*",
+            ]
+          + sid       = "AllowSSMReadActions"
+        }
+      + statement {
+          + actions   = [
+              + "pricing:GetProducts",
+            ]
+          + resources = [
+              + "*",
+            ]
+          + sid       = "AllowPricingReadActions"
+        }
+      + statement {
+          + actions   = [
+              + "sqs:DeleteMessage",
+              + "sqs:GetQueueUrl",
+              + "sqs:ReceiveMessage",
+            ]
+          + resources = [
+              + (known after apply),
+            ]
+          + sid       = "AllowInterruptionQueueActions"
+        }
+      + statement {
+          + actions   = [
+              + "iam:PassRole",
+            ]
+          + resources = [
+              + (known after apply),
+            ]
+          + sid       = "AllowPassingInstanceRole"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "ec2.amazonaws.com",
+                ]
+              + variable = "iam:PassedToService"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "iam:CreateInstanceProfile",
+            ]
+          + resources = [
+              + "arn:aws:iam::009160043369:instance-profile/*",
+            ]
+          + sid       = "AllowScopedInstanceProfileCreationActions"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "eks-karpenter-demo",
+                ]
+              + variable = "aws:RequestTag/eks:eks-cluster-name"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:RequestTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "us-east-1",
+                ]
+              + variable = "aws:RequestTag/topology.kubernetes.io/region"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:RequestTag/karpenter.k8s.aws/ec2nodeclass"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "iam:TagInstanceProfile",
+            ]
+          + resources = [
+              + "arn:aws:iam::009160043369:instance-profile/*",
+            ]
+          + sid       = "AllowScopedInstanceProfileTagActions"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "eks-karpenter-demo",
+                ]
+              + variable = "aws:RequestTag/eks:eks-cluster-name"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:RequestTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:ResourceTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "us-east-1",
+                ]
+              + variable = "aws:RequestTag/topology.kubernetes.io/region"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "us-east-1",
+                ]
+              + variable = "aws:ResourceTag/topology.kubernetes.io/region"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:RequestTag/karpenter.k8s.aws/ec2nodeclass"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:ResourceTag/karpenter.k8s.aws/ec2nodeclass"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "iam:AddRoleToInstanceProfile",
+              + "iam:DeleteInstanceProfile",
+              + "iam:RemoveRoleFromInstanceProfile",
+            ]
+          + resources = [
+              + "arn:aws:iam::009160043369:instance-profile/*",
+            ]
+          + sid       = "AllowScopedInstanceProfileActions"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "owned",
+                ]
+              + variable = "aws:ResourceTag/kubernetes.io/cluster/eks-karpenter-demo"
+            }
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + "us-east-1",
+                ]
+              + variable = "aws:ResourceTag/topology.kubernetes.io/region"
+            }
+          + condition {
+              + test     = "StringLike"
+              + values   = [
+                  + "*",
+                ]
+              + variable = "aws:ResourceTag/karpenter.k8s.aws/ec2nodeclass"
+            }
+        }
+      + statement {
+          + actions   = [
+              + "iam:GetInstanceProfile",
+            ]
+          + resources = [
+              + "arn:aws:iam::009160043369:instance-profile/*",
+            ]
+          + sid       = "AllowInstanceProfileReadActions"
+        }
+      + statement {
+          + actions   = [
+              + "eks:DescribeCluster",
+            ]
+          + resources = [
+              + "arn:aws:eks:us-east-1:009160043369:cluster/eks-karpenter-demo",
+            ]
+          + sid       = "AllowAPIServerEndpointDiscovery"
+        }
+    }
+
+  # module.karpenter.aws_cloudwatch_event_rule.this["health_event"] will be created
+  + resource "aws_cloudwatch_event_rule" "this" {
+      + arn            = (known after apply)
+      + description    = "Karpenter interrupt - AWS health event"
+      + event_bus_name = "default"
+      + event_pattern  = jsonencode(
+            {
+              + detail-type = [
+                  + "AWS Health Event",
+                ]
+              + source      = [
+                  + "aws.health",
+                ]
+            }
+        )
+      + force_destroy  = false
+      + id             = (known after apply)
+      + name           = (known after apply)
+      + name_prefix    = "KarpenterHealthEvent-"
+      + tags           = {
+          + "ClusterName" = "eks-karpenter-demo"
+          + "Environment" = "test"
+        }
+      + tags_all       = {
+          + "ClusterName" = "eks-karpenter-demo"
+          + "Environment" = "test"
+          + "Project"     = "EKS-Karpenter-Test"
+          + "Terraform"   = "True"
+        }
+    }
+
+  # module.karpenter.aws_cloudwatch_event_rule.this["instance_rebalance"] will be created
+  + resource "aws_cloudwatch_event_rule" "this" {
+      + arn            = (known after apply)
+      + description    = "Karpenter interrupt - EC2 instance rebalance recommendation"
+      + event_bus_name = "default"
+      + event_pattern  = jsonencode(
+            {
+              + detail-type = [
+                  + "EC2 Instance Rebalance Recommendation",
+                ]
+              + source      = [
+                  + "aws.ec2",
+                ]
+            }
+        )
+      + force_destroy  = false
+      + id             = (known after apply)
+      + name           = (known after apply)
+      + name_prefix    = "KarpenterInstanceRebalance-"
+      + tags           = {
+          + "ClusterName" = "eks-karpenter-demo"
+          + "Environment" = "test"
+        }
+      + tags_all       = {
+          + "ClusterName" = "eks-karpenter-demo"
+          + "Environment" = "test"
+          + "Project"     = "EKS-Karpenter-Test"
+          + "Terraform"   = "True"
+        }
+    }
+
+  # module.karpenter.aws_cloudwatch_event_rule.this["instance_state_change"] will be created
+  + resource "aws_cloudwatch_event_rule" "this" {
+      + arn            = (known after apply)
+      + description    = "Karpenter interrupt - EC2 instance state-change notification"
+      + event_bus_name = "default"
+      + event_pattern  = jsonencode(
+            {
+              + detail-type = [
+                  + "EC2 Instance State-change Notification",
+                ]
+              + source      = [
+                  + "aws.ec2",
+                ]
+            }
+        )
+      + force_destroy  = false
+      + id             = (known after apply)
+      + name           = (known after apply)
+      + name_prefix    = "KarpenterInstanceStateChange-"
+      + tags           = {
+          + "ClusterName" = "eks-karpenter-demo"
+          + "Environment" = "test"
+        }
+      + tags_all       = {
+          + "ClusterName" = "eks-karpenter-demo"
+          + "Environment" = "test"
+          + "Project"     = "EKS-Karpenter-Test"
+          + "Terraform"   = "True"
+        }
+    }
+
+  # module.karpenter.aws_cloudwatch_event_rule.this["spot_interrupt"] will be created
+  + resource "aws_cloudwatch_event_rule" "this" {
+      + arn            = (known after apply)
+      + description    = "Karpenter interrupt - EC2 spot instance interruption warning"
+      + event_bus_name = "default"
+      + event_pattern  = jsonencode(
+            {
+              + detail-type = [
+                  + "EC2 Spot Instance Interruption Warning",
+                ]
+              + source      = [
+                  + "aws.ec2",
+                ]
+            }
+        )
+      + force_destroy  = false
+      + id             = (known after apply)
+      + name           = (known after apply)
+      + name_prefix    = "KarpenterSpotInterrupt-"
+      + tags           = {
+          + "ClusterName" = "eks-karpenter-demo"
+          + "Environment" = "test"
+        }
+      + tags_all       = {
+          + "ClusterName" = "eks-karpenter-demo"
+          + "Environment" = "test"
+          + "Project"     = "EKS-Karpenter-Test"
+          + "Terraform"   = "True"
+        }
+    }
+
+  # module.karpenter.aws_cloudwatch_event_target.this["health_event"] will be created
+  + resource "aws_cloudwatch_event_target" "this" {
+      + arn            = (known after apply)
+      + event_bus_name = "default"
+      + force_destroy  = false
+      + id             = (known after apply)
+      + rule           = (known after apply)
+      + target_id      = "KarpenterInterruptionQueueTarget"
+    }
+
+  # module.karpenter.aws_cloudwatch_event_target.this["instance_rebalance"] will be created
+  + resource "aws_cloudwatch_event_target" "this" {
+      + arn            = (known after apply)
+      + event_bus_name = "default"
+      + force_destroy  = false
+      + id             = (known after apply)
+      + rule           = (known after apply)
+      + target_id      = "KarpenterInterruptionQueueTarget"
+    }
+
+  # module.karpenter.aws_cloudwatch_event_target.this["instance_state_change"] will be created
+  + resource "aws_cloudwatch_event_target" "this" {
+      + arn            = (known after apply)
+      + event_bus_name = "default"
+      + force_destroy  = false
+      + id             = (known after apply)
+      + rule           = (known after apply)
+      + target_id      = "KarpenterInterruptionQueueTarget"
+    }
+
+  # module.karpenter.aws_cloudwatch_event_target.this["spot_interrupt"] will be created
+  + resource "aws_cloudwatch_event_target" "this" {
+      + arn            = (known after apply)
+      + event_bus_name = "default"
+      + force_destroy  = false
+      + id             = (known after apply)
+      + rule           = (known after apply)
+      + target_id      = "KarpenterInterruptionQueueTarget"
+    }
+
+  # module.karpenter.aws_eks_access_entry.node[0] will be created
+  + resource "aws_eks_access_entry" "node" {
+      + access_entry_arn  = (known after apply)
+      + cluster_name      = "eks-karpenter-demo"
+      + created_at        = (known after apply)
+      + id                = (known after apply)
+      + kubernetes_groups = (known after apply)
+      + modified_at       = (known after apply)
+      + principal_arn     = (known after apply)
+      + tags              = {
+          + "Environment" = "test"
+        }
+      + tags_all          = {
+          + "Environment" = "test"
+          + "Project"     = "EKS-Karpenter-Test"
+          + "Terraform"   = "True"
+        }
+      + type              = "EC2_LINUX"
+      + user_name         = (known after apply)
+    }
+
+  # module.karpenter.aws_eks_pod_identity_association.karpenter[0] will be created
+  + resource "aws_eks_pod_identity_association" "karpenter" {
+      + association_arn = (known after apply)
+      + association_id  = (known after apply)
+      + cluster_name    = "eks-karpenter-demo"
+      + id              = (known after apply)
+      + namespace       = "kube-system"
+      + role_arn        = (known after apply)
+      + service_account = "karpenter"
+      + tags            = {
+          + "Environment" = "test"
+        }
+      + tags_all        = {
+          + "Environment" = "test"
+          + "Project"     = "EKS-Karpenter-Test"
+          + "Terraform"   = "True"
+        }
+    }
+
+  # module.karpenter.aws_iam_policy.controller[0] will be created
+  + resource "aws_iam_policy" "controller" {
+      + arn              = (known after apply)
+      + attachment_count = (known after apply)
+      + description      = "Karpenter controller IAM policy"
+      + id               = (known after apply)
+      + name             = (known after apply)
+      + name_prefix      = "KarpenterController-"
+      + path             = "/"
+      + policy           = (known after apply)
+      + policy_id        = (known after apply)
+      + tags             = {
+          + "Environment" = "test"
+        }
+      + tags_all         = {
+          + "Environment" = "test"
+          + "Project"     = "EKS-Karpenter-Test"
+          + "Terraform"   = "True"
+        }
+    }
+
+  # module.karpenter.aws_iam_role.controller[0] will be created
+  + resource "aws_iam_role" "controller" {
+      + arn                   = (known after apply)
+      + assume_role_policy    = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action    = [
+                          + "sts:TagSession",
+                          + "sts:AssumeRole",
+                        ]
+                      + Effect    = "Allow"
+                      + Principal = {
+                          + Service = "pods.eks.amazonaws.com"
+                        }
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+      + create_date           = (known after apply)
+      + description           = "Karpenter controller IAM role"
+      + force_detach_policies = true
+      + id                    = (known after apply)
+      + managed_policy_arns   = (known after apply)
+      + max_session_duration  = 3600
+      + name                  = (known after apply)
+      + name_prefix           = "KarpenterController-"
+      + path                  = "/"
+      + tags                  = {
+          + "Environment" = "test"
+        }
+      + tags_all              = {
+          + "Environment" = "test"
+          + "Project"     = "EKS-Karpenter-Test"
+          + "Terraform"   = "True"
+        }
+      + unique_id             = (known after apply)
+
+      + inline_policy (known after apply)
+    }
+
+  # module.karpenter.aws_iam_role.node[0] will be created
+  + resource "aws_iam_role" "node" {
+      + arn                   = (known after apply)
+      + assume_role_policy    = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action    = "sts:AssumeRole"
+                      + Effect    = "Allow"
+                      + Principal = {
+                          + Service = "ec2.amazonaws.com"
+                        }
+                      + Sid       = "EKSNodeAssumeRole"
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+      + create_date           = (known after apply)
+      + force_detach_policies = true
+      + id                    = (known after apply)
+      + managed_policy_arns   = (known after apply)
+      + max_session_duration  = 3600
+      + name                  = "eks-karpenter-demo-karpenter-node-role"
+      + name_prefix           = (known after apply)
+      + path                  = "/"
+      + tags                  = {
+          + "Environment" = "test"
+        }
+      + tags_all              = {
+          + "Environment" = "test"
+          + "Project"     = "EKS-Karpenter-Test"
+          + "Terraform"   = "True"
+        }
+      + unique_id             = (known after apply)
+
+      + inline_policy (known after apply)
+    }
+
+  # module.karpenter.aws_iam_role_policy_attachment.controller[0] will be created
+  + resource "aws_iam_role_policy_attachment" "controller" {
+      + id         = (known after apply)
+      + policy_arn = (known after apply)
+      + role       = (known after apply)
+    }
+
+  # module.karpenter.aws_iam_role_policy_attachment.node["AmazonEC2ContainerRegistryReadOnly"] will be created
+  + resource "aws_iam_role_policy_attachment" "node" {
+      + id         = (known after apply)
+      + policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+      + role       = "eks-karpenter-demo-karpenter-node-role"
+    }
+
+  # module.karpenter.aws_iam_role_policy_attachment.node["AmazonEKSWorkerNodePolicy"] will be created
+  + resource "aws_iam_role_policy_attachment" "node" {
+      + id         = (known after apply)
+      + policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
+      + role       = "eks-karpenter-demo-karpenter-node-role"
+    }
+
+  # module.karpenter.aws_iam_role_policy_attachment.node["AmazonEKS_CNI_Policy"] will be created
+  + resource "aws_iam_role_policy_attachment" "node" {
+      + id         = (known after apply)
+      + policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+      + role       = "eks-karpenter-demo-karpenter-node-role"
+    }
+
+  # module.karpenter.aws_sqs_queue.this[0] will be created
+  + resource "aws_sqs_queue" "this" {
+      + arn                               = (known after apply)
+      + content_based_deduplication       = false
+      + deduplication_scope               = (known after apply)
+      + delay_seconds                     = 0
+      + fifo_queue                        = false
+      + fifo_throughput_limit             = (known after apply)
+      + id                                = (known after apply)
+      + kms_data_key_reuse_period_seconds = 0
+      + max_message_size                  = 262144
+      + message_retention_seconds         = 300
+      + name                              = "Karpenter-eks-karpenter-demo"
+      + name_prefix                       = (known after apply)
+      + policy                            = (known after apply)
+      + receive_wait_time_seconds         = 0
+      + redrive_allow_policy              = (known after apply)
+      + redrive_policy                    = (known after apply)
+      + sqs_managed_sse_enabled           = true
+      + tags                              = {
+          + "Environment" = "test"
+        }
+      + tags_all                          = {
+          + "Environment" = "test"
+          + "Project"     = "EKS-Karpenter-Test"
+          + "Terraform"   = "True"
+        }
+      + url                               = (known after apply)
+      + visibility_timeout_seconds        = 30
+    }
+
+  # module.karpenter.aws_sqs_queue_policy.this[0] will be created
+  + resource "aws_sqs_queue_policy" "this" {
+      + id        = (known after apply)
+      + policy    = (known after apply)
+      + queue_url = (known after apply)
+    }
+
+Plan: 19 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + karpenter_node_role_arn   = (known after apply)
+  + karpenter_queue_name      = "Karpenter-eks-karpenter-demo"
+
+─────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.

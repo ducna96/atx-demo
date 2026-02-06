@@ -1,0 +1,45 @@
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+aws ecr-public get-login-password --region us-east-1 | helm registry login public.ecr.aws --username AWS --password-stdin
+
+# 1. Biến môi trường
+CLUSTER_NAME="eks-karpenter-demo"
+
+# 2. Cài đặt Karpenter
+  xong chạy cài Addon
+aws eks create-addon --cluster-name eks-karpenter-demo --addon-name eks-pod-identity-agent --region us-east-1
+aws iam create-service-linked-role --aws-service-name spot.amazonaws.com
+helm upgrade --install karpenter oci://public.ecr.aws/karpenter/karpenter \
+  --version 1.8.1 \
+  --namespace kube-system \
+  --create-namespace \
+  --set settings.clusterName=${CLUSTER_NAME} \
+  --set settings.interruptionQueue=${CLUSTER_NAME} \
+  --wait
+
+# 1. Cài đặt CRD cho EC2NodeClass
+kubectl apply -f https://raw.githubusercontent.com/aws/karpenter-provider-aws/v1.8.1/pkg/apis/crds/karpenter.k8s.aws_ec2nodeclasses.yaml
+
+# 2. Cài đặt CRD cho NodePool
+kubectl apply -f https://raw.githubusercontent.com/aws/karpenter-provider-aws/v1.8.1/pkg/apis/crds/karpenter.sh_nodepools.yaml
+
+# 3. Cài đặt CRD cho NodeClaim
+kubectl apply -f https://raw.githubusercontent.com/aws/karpenter-provider-aws/v1.8.1/pkg/apis/crds/karpenter.sh_nodeclaims.yaml
+-----------
+
+1. install nginx ingress
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+helm upgrade --install ingress-nginx ingress-nginx/ingress-nginx \
+  --namespace ingress-nginx --create-namespace \
+  --set controller.service.type=LoadBalancer \
+  --set controller.nodeSelector.app=nginx \
+  --set controller.nodeSelector.tier=frontend \
+  --set "controller.tolerations[0].key=app" \
+  --set "controller.tolerations[0].operator=Equal" \
+  --set "controller.tolerations[0].value=nginx" \
+  --set "controller.tolerations[0].effect=NoSchedule"
+2. install Cert-manger, Let's Encrypt
+kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.15.0/cert-manager.yaml
+
+3.### install Metrics server
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
